@@ -1,0 +1,19 @@
+<?php
+require 'library/smarty/Smarty.class.php';
+require 'modules/module.pbkdf2.php';
+
+//echo phpinfo();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*	Smarty template változók megadása. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$smarty = new Smarty;
+require 'site.config.php';
+
+
+$smarty->assign("loginPage",$loginPage,true);
+$smarty->assign("loggedIn",$loggedIn,true);
+
+$smarty->display('index.tpl');
+
+?>

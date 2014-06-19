@@ -1,0 +1,4 @@
+
+.site_menu { display:block; }
+.site_menu UL { display:block; }
+.site_menu UL > LI { display:block; float:left; line-height:85px; padding:0px 10px;}
